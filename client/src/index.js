@@ -1,3 +1,4 @@
+// Redux에서 제공하는 Provider 가져오기
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -8,8 +9,10 @@ import 'antd/dist/antd.css';
 import { applyMiddleware, createStore } from 'redux';
 import promiseMiddleware from 'redux-promise';
 import ReduxThunk from 'redux-thunk';
+// 자동적으로 index.js를 찾아서 처리함
 import Reducer from './_reducers';
 
+// promise, function 형태를 받을 수 있게 해준다.
 const createStoreWithMiddleware = applyMiddleware(promiseMiddleware, ReduxThunk)(createStore)
 
 ReactDOM.render(

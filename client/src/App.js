@@ -21,7 +21,11 @@ function App() {
           matches the current URL. Use a <Switch> any time
           you have multiple routes, but you want only one
           of them to render at a time
+          
+          라우터 부분 <Switch>
+
         */}
+        
         <Switch>
           <Route exact path="/" component={Auth(LandingPage, null )  } />
           <Route exact path="/login" component={Auth(LoginPage, false) } />
