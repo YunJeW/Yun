@@ -23,7 +23,7 @@ function App() {
           of them to render at a time
           
           라우터 부분 <Switch>
-
+          Auth 컴포넌트로 다른 컴포넌트들을 감싸준다.
         */}
         
         <Switch>
