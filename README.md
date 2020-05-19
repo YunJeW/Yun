@@ -1,1 +1,2 @@
-# boiler-plate-ko
+
+React + Redux + Promise + Thunk
